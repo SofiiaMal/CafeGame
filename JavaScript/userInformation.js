@@ -55,7 +55,7 @@ isPurchasedTopping();
 toppingSelectedOnLoad();
 
 function isPurchasedTopping(){
-    let isPurchased = localStorage.purchasedToppings.split(",");
+    let isPurchased = localStorage.getItem("purchasedToppings").split(",");
 
     if(isPurchased[3] == "true"){
         document.getElementById("lavenderToppingPurchase").classList.add("hidden");
