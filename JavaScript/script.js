@@ -2,6 +2,9 @@ if (!localStorage.getItem("username")) {
     localStorage.setItem("username", "User");
 }
 
+
+      import 'https://tomashubelbauer.github.io/github-pages-local-storage/index.js';
+
 if (!localStorage.getItem("purchasedToppings")) {
     localStorage.setItem("purchasedToppings", "true,true,true,false,false,false,false");
 }
