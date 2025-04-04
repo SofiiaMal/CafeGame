@@ -1,7 +1,5 @@
 //reset local storage
 
-      import 'https://tomashubelbauer.github.io/github-pages-local-storage/index.js';
-
 document.getElementById("resetLocalStorageBtn").onclick = function() {
     localStorage.setItem("username", "User");
     localStorage.setItem("purchasedToppings", "true,true,true,false,false,false,false");
