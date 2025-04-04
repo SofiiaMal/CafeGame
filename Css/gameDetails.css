@@ -1,0 +1,460 @@
+.prepOrder{
+    background-image: url(../Images/misc/prepOrderTray.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 105px;
+    height: 190px;
+    display: block;
+
+    position: absolute;
+}
+
+#prepOrder1{
+    top: 520px;
+    left: 200px;
+}
+
+#prepOrder2{
+    top: 520px;
+    left: 320px;
+}
+
+.topping{
+    height: 155px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+}
+
+.topping img{
+    object-fit: contain;
+    height: auto;
+    max-height: 155px;
+    width: auto;
+    max-width: 100px;
+    transform: scaleX(-1);
+}
+
+.toppingJar1{
+    top: 410px;
+    left: 125px;
+}
+
+.toppingJar2{
+    top: 430px;
+    left: 62px;
+}
+
+.toppingJar3{
+    top: 480px;
+    left: 25px;
+}
+
+.teaCup{
+    position: absolute;
+    height: 155px;
+    width: 100px;
+
+    top: 630px;
+    left: 40px;
+}
+
+.teaCup img{
+    height: auto;
+    max-height: 155px;
+    width: auto;
+    max-width: 100px;
+}
+
+.kettle{
+    position: absolute;
+    height: 205px;
+    width: 150px;
+
+    top: 380px;
+    left: 390px;
+}
+
+.kettle img{
+    height: auto;
+    max-height: 205px;
+    width: auto;
+    max-width: 150px;
+}
+
+.sugarPile{
+    position: absolute;
+    height: 205px;
+    width: 150px;
+
+    top: 500px;
+    left: 460px;
+}
+
+.sugarPile img{
+    height: auto;
+    max-height: 205px;
+    width: auto;
+    max-width: 150px;
+}
+
+.trashCan{
+    position: absolute;
+    height: 155px;
+    width: 100px;
+
+    top: 400px;
+    left: 560px;
+}
+
+.trashCan img{
+    height: auto;
+    max-height: 155px;
+    width: auto;
+    max-width: 100px;
+}
+
+.specialPaper{
+    position: absolute;
+    height: 125px;
+    width: 100px;
+
+    top: 570px;
+    left: 590px;
+}
+
+.specialPaper img{
+    height: auto;
+    max-height: 125px;
+    width: auto;
+    max-width: 100px;
+
+    transform: skew(-0.08turn, 20deg);
+}
+
+.cookie{
+    position: absolute;
+    height: 125px;
+    width: 100px;
+}
+
+.cookie img{
+    height: auto;
+    max-height: 125px;
+    width: auto;
+    max-width: 100px;
+}
+
+.cookieBox1{
+    top: 460px;
+    left: 690px;
+}
+
+.cookieBox2{
+    top: 460px;
+    left: 800px;
+}
+
+.cookieBox3{
+    top: 460px;
+    left: 910px;
+}
+
+.specialReceive{
+    position: absolute;
+    height: 125px;
+    width: 100px;
+
+    top: 620px;
+    left: 790px;
+}
+
+.specialReceive img{
+    height: auto;
+    max-height: 125px;
+    width: auto;
+    max-width: 100px;
+}
+
+.specialReceive1{
+    top: 600px;
+    left: 740px;
+}
+
+.specialReceive2{
+    top: 630px;
+    left: 860px;
+}
+
+p img{
+    width: auto;
+    height: auto;
+    max-width: 20px;
+    max-height: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+h4{
+    font-size: 60px;
+    line-height: 0;
+    margin-top: 50px;
+    padding: 0;
+    padding-left: 10px;
+    margin-bottom: 70px;
+    color: #fff18f;
+}
+
+p{
+    font-size: 20px;
+    padding: 0;
+    padding-left: 10px;
+    color: #fff18f;
+    line-height: 0.5;
+}
+
+.topPanel{
+    display: flex;
+}
+
+.customerLine1{
+    width: 300px;
+    height: 270px;
+
+    position: absolute;
+    top: 172px;
+    left: 110px;
+    display: flex;
+}
+
+.customerLine2{
+    width: 300px;
+    height: 270px;
+
+    position: absolute;
+    top: 172px;
+    left: 610px;
+    display: flex;
+}
+
+.order{
+    position: relative;
+    top: -40px;
+    left: 40px;
+    height: 100%;
+    width: 50%;
+    background-image: url(../Images/misc/ingameOrderBG.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.customer{
+    height: 100%;
+    width: 50%;
+}
+
+.customer img{
+    width: auto;
+    height: 100%;
+}
+
+
+.order *{
+    padding: 0;
+    margin: 0;
+    margin-left: -20px;
+    user-select: none;
+    
+}
+
+.order img{
+    height: 40px;
+    width: auto;
+    user-select: none;
+    max-width: none;
+    max-height: none;
+    user-select: none;
+}
+
+.teaCupOrder img{
+    height: auto;
+    width: 80px;
+    margin-top: 10px;
+}
+
+.teaSpecificsOrder{
+    width: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 0;
+    position: relative;
+    top: -40px;
+}
+
+.cookiePlateOrder img{
+    width: 80px;
+    height: auto;
+    position: relative;
+    top: -35px;
+}
+
+.specialOrder img{
+    width: 80px;
+    height: auto;
+    position: relative;
+    top: -20px;
+}
+
+.specialMenuChoice{
+    z-index: 3;
+    position: relative;
+    top: 80px;
+    left: 170px;
+
+    width: 600px;
+    height: 400px;
+    background-image: url(../Images/misc/specialMenuChoicePaper.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 50px;
+}
+
+.tintedScreen{
+    z-index: 2;
+    
+    display: block;
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    top: 115px;
+    border-radius: 10px;
+    width: 1009px;
+    height: 609px;
+}
+
+.specialMenuChoice span{
+    margin-left: -17px;
+    width: 130px;
+    height: 130px;
+    display: grid;
+    align-items: center;
+    
+}
+
+.topRow{
+    margin-bottom: -80px;
+}
+
+.specialMenuChoice img{
+    width: auto;
+    height: auto;
+    max-width: 120px;
+    max-height: 120px;
+}
+
+.crrntlyHolding{
+    position: absolute;
+    top: 385px;
+    left: 250px;
+
+    background-image: url(../Images/misc/currentlyHolding.png);
+    background-size: cover;
+
+    height: 125px;
+    width: 120px;
+}
+
+.crrntlyHolding img{
+    height: auto;
+    width: auto;
+    max-height: 75px;
+    max-width: 80px;
+
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.prepOrder{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.prepOrder *{
+    padding: 0;
+    margin: 0;
+}
+
+.prepOrder img{
+    height: 40px;
+    width: auto;
+    user-select: none;
+    max-width: none;
+    max-height: none;
+    user-select: none;
+}
+
+.teaCupPrep img{
+    height: auto;
+    width: 70px;
+    position: relative;
+    top: 10px;
+    
+}
+
+.teaSpecificsPrep{
+    width: 120px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 0;
+    position: relative;
+    top: -15px;
+}
+
+.cookiePlatePrep img{
+    width: 70px;
+    height: auto;
+    position: relative;
+    top: -15px;
+}
+
+.specialPrep img{
+    width: 70px;
+    height: auto;
+    position: relative;
+    top: -10px;
+}
+
+.reaction.line1{
+    z-index: 20;
+    position: absolute;
+    top: 175px;
+    left: 420px;
+}
+
+.reaction.line2{
+    z-index: 20;
+    position: absolute;
+    top: 175px;
+    left: 920px;
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title>Game Screen</title>
+        <meta http-equiv="Content-type" content="text/html;charset=UFT-8" />
+        <link rel="stylesheet" href="./Css/gamePanel.css">
+        <script src="./JavaScript/gamePanel.js" type="module" defer></script>
+        <link href="https://fonts.googleapis.com/css2?family=Angkor&display=swap" rel="stylesheet">
+    </head>
+
+    <body class="">
+        <header>
+            <span id="timeLeftHeader">Time Left : 5 m. 00 s.</span>
+            <div class="slidecontainer">
+                <input type="range" min="0" max="100" value="0" class="slider" id="myRange">
+            </div>
+            
+        </header>
+
+        
+
+        <div class="container">
+
+            <div class="gamePanel">
+
+                <div class="Misc">
+                    <div id="specialMenuChoice" class="specialMenuChoice hidden">
+                        <span class="topRow"><img id="specialOrder1" src="../Images/icons/chocoCake.png" alt=""></span>
+                        <span class="topRow"><img id="specialOrder2" src="../Images/icons/pumpkinCake.png" alt=""></span>
+                        <span class="topRow"><img id="specialOrder3" src="../Images/icons/pinkCake.png" alt=""></span>
+                        <span><img id="specialOrder4" src="../Images/icons/candyPlate.png" alt=""></span>
+                        <span><img id="specialOrder5" src="../Images/icons/jellyStick.png" alt=""></span>
+                        <span><img id="specialOrder6" src="../Images/icons/fruitStickSmall.png" alt=""></span>
+                    </div>
+                    <span id="tintedScreen" class="tintedScreen hidden"></span>
+
+                    <div class="reaction line1">
+                        <span id="reactionLine1Positive" class="hidden"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103.57 89.87" width="30px" height="30px"><defs><style>.cls-1{fill:#841313;}</style></defs><path class="cls-1" d="M76.18,0A27.37,27.37,0,0,0,51.82,14.88,27.38,27.38,0,0,0,.08,27.38S-4.09,70.3,48.8,89.87c0,0,54.77-13.27,54.77-62.49A27.38,27.38,0,0,0,76.18,0Z"/></svg></span>
+                        <span id="reactionLine1Negative" class="hidden"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108.33 89.87" width="30px" height="30px"><defs><style>.cls-2{fill:#821475;}</style></defs><path class="cls-2" d="M108.33,27.38a27.38,27.38,0,0,0-51.74-12.5l-5.53,19,9.7,20.94L52.08,73.53l1.48,16.34S108.33,76.6,108.33,27.38Z"/><path class="cls-2" d="M56,54.81l-9.7-20.94,5.53-19A27.38,27.38,0,0,0,.08,27.38S-4.09,70.3,48.8,89.87L47.31,73.53Z"/></svg></span>
+                    </div>
+                    <div class="reaction line2">
+                        <span id="reactionLine2Positive" class="hidden"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103.57 89.87" width="30px" height="30px"><defs><style>.cls-1{fill:#841313;}</style></defs><path class="cls-1" d="M76.18,0A27.37,27.37,0,0,0,51.82,14.88,27.38,27.38,0,0,0,.08,27.38S-4.09,70.3,48.8,89.87c0,0,54.77-13.27,54.77-62.49A27.38,27.38,0,0,0,76.18,0Z"/></svg></span>
+                        <span id="reactionLine2Negative" class="hidden"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108.33 89.87" width="30px" height="30px"><defs><style>.cls-2{fill:#821475;}</style></defs><path class="cls-2" d="M108.33,27.38a27.38,27.38,0,0,0-51.74-12.5l-5.53,19,9.7,20.94L52.08,73.53l1.48,16.34S108.33,76.6,108.33,27.38Z"/><path class="cls-2" d="M56,54.81l-9.7-20.94,5.53-19A27.38,27.38,0,0,0,.08,27.38S-4.09,70.3,48.8,89.87L47.31,73.53Z"/></svg></span>
+                    </div>
+                </div>
+
+                <div class="topPanel">
+                    <div class="customerLine1">
+                        <div class="order hidden">
+                            <p class="teaCupOrder"><img class="teaCupOrderImg" src="" alt=""></p>
+                            <div class="teaSpecificsOrder">
+                                <p class="toppingOrder"><img class="toppingImg line1" src="" alt=""></p>
+                                <p class="sugarOrder"><img class="sugarImg line1" src="" alt=""></p>
+                            </div>
+                            <p class="cookiePlateOrder"><img class="cookieImg line1" src="" alt=""></p>
+                            <p class="specialOrder"><img class="specialImg line1" src="" alt=""></p>
+                        </div>
+                        <span class="customer hidden"><img class="customerImg line1" src="" alt=""></span>
+                    </div>
+                    <div class="customerLine2">
+                        <div class="order hidden">
+                            <p class="teaCupOrder"><img class="teaCupOrderImg" src="" alt=""></p>
+                            <div class="teaSpecificsOrder">
+                                <p class="toppingOrder"><img class="toppingImg line1" id="" src="" alt=""></p>
+                                <p class="sugarOrder"><img class="sugarImg line2" id="" src="" alt=""></p>
+                            </div>
+                            <p class="cookiePlateOrder"><img class="cookieImg line2" id="" src="" alt=""></p>
+                            <p class="specialOrder"><img class="specialImg line2" id="" src="" alt=""></p>
+                        </div>
+                        <span class="customer hidden"><img class="customerImg line2" src="" alt=""></span>
+                    </div>
+                </div>
+                
+                <div class="bottomPanel">
+                    <div class="toppingsElements">
+                        <span class="topping toppingJar1"><img id="toppingJar1" src="" alt=""></span>
+                        <span class="topping toppingJar2"><img id="toppingJar2" src="" alt=""></span>
+                        <span class="topping toppingJar3"><img id="toppingJar3" src="" alt=""></span>
+                    </div>
+                    <div class="cookiesElements">
+                        <span class="cookie cookieBox1"><img id="cookieBox1" src="../Images/ingame/plainCookieBox.png" alt=""></span>
+                        <span class="cookie cookieBox2"><img id="cookieBox2" src="../Images/ingame/chocoChipCookieBox.png" alt=""></span>
+                        <span class="cookie cookieBox3"><img id="cookieBox3" src="../Images/ingame/drawnOnCookieBox.png" alt=""></span>
+                    </div>
+
+                    <span class="crrntlyHolding"><img id="crntlyHoldingImg" src="" alt=""></span>
+
+                    <span class="teaCup"><img id="teaCupTake" src="" alt=""></span>
+                    <span class="kettle"><img id="teaTake" src="" alt=""></span>
+                    
+                    <span class="trashCan"><img id="trashCanGame" src="./Images/misc/trashCan.png" alt=""></span>
+                    <span class="sugarPile"><img id="sugarTake" src="./Images/misc/sugarPile.png" alt=""></span>
+                    <span id="specialPaperTable" class="specialPaper"><img src="./Images/misc/specialMenuPaper.png" alt=""></span>
+
+                    <span class="specialReceive specialReceive1"><img id="specialReceive1" src="" alt=""></span>
+                    <span class="specialReceive specialReceive2"><img id="specialReceive2" src="" alt=""></span>
+
+                    <div id="prepOrder1" class="prepOrder">
+                        <p class="teaCupPrep"><img id="cupPrep1" src="" alt=""></p>
+                        <div class="teaSpecificsPrep">
+                            <p class="toppingPrep"><img class="toppingPrepImg tray1" src="" alt=""></p>
+                            <p class="sugarPrep"><img class="sugarPrepImg tray1" src="" alt=""></p>
+                        </div>
+                        <p class="cookiePlatePrep"><img class="cookiePrepImg tray1" src="" alt=""></p>
+                        <p class="specialPrep"><img class="specialPrepImg tray1" src="" alt=""></p>
+                    </div>
+                    <div id="prepOrder2" class="prepOrder">
+                        <p class="teaCupPrep"><img id="cupPrep2" src="" alt=""></p>
+                        <div class="teaSpecificsPrep">
+                            <p class="toppingPrep"><img class="toppingPrepImg tray2" src="" alt=""></p>
+                            <p class="sugarPrep"><img class="sugarPrepImg tray2" src="" alt=""></p>
+                        </div>
+                        <p class="cookiePlatePrep"><img class="cookiePrepImg tray2" src="" alt=""></p>
+                        <p class="specialPrep"><img class="specialPrepImg tray2" src="" alt=""></p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="sidePanel">
+                <h4 id="dayCountGame">Day X</h4>
+                <p id="customersLeftGame">Customers Left to Serve : X</p>
+                <p><span id="earningsGame">This day's earnings : 0</span><img src="../Images/icons/Coin.png" alt=""></p>
+                <button id="testStartTimer">start timer</button>
+                <button id="newCustomer">new customer</button>
+                <button id="removeCustomer">remove customer</button>
+            </div>
+
+            <div class="beforeStart">
+                <div class="popUp">
+                    <p id="beforeDayGame">Day X</p>
+                    <p>Do you wish to start the day?</p>
+                    <span><button id="startGameBtn">Start the day</button><button><a href="../index.html">Return to menu</a></button></span>
+                </div>
+                <span id="tintedScreenBIG" class="tintedScreenBIG"></span>
+            </div>
+
+            <div class="beforeStart afterDay hidden">
+                <div class="popUp">
+                    <p id="dayAfterGame">Day X is done!</p>
+                    <p><span id="earningsAfterDay">Today's earnings : X</span><img src="../Images/icons/Coin.png" alt=""></p>
+                    <button><a href="../index.html">Return to menu</a></button>
+                </div>
+                <span id="tintedScreenBIG" class="tintedScreenBIG"></span>
+            </div>
+
+        </div>
+
+    </body>
+</html>     

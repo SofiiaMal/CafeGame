@@ -1,0 +1,31 @@
+header{
+    background-color: #333333;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #f0d4b5;
+}
+
+header div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    padding-right: 20px;
+}
+
+
+header img{
+    width: 30px;
+    height: auto;
+    padding: 5px;
+}
+
+#headerPlayerName{
+    margin-right: auto;
+    padding-left: 20px;
+    font-size: 30px;
+}
+

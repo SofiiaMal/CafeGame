@@ -1,0 +1,256 @@
+.mainMenuPanel{
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    "sidePanel menuElements";
+    width: 100%;
+    height: 100%;
+}
+
+.sidePanel{ 
+    grid-area: sidePanel;
+    background-color: #333333;
+    height: 89.2vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.sidePanel img{
+    margin-top: 20px;
+}
+
+.sidePanelOptions{
+    width: 100%;
+    height: 75px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.sidePanelOptions.baseMenu{
+    background-color: #f0d4b5;
+    color: #553b3e;
+}
+
+.sidePanelOptions.specialMenu{
+    background-color: #e3bb88;
+    color: #553b3e;
+}
+
+.sidePanelOptions.talents{
+    background-color: #e59c67;
+    color: #553b3e;
+}
+
+.sidePanelOptions.utilitiesVisual{
+    background-color: #b1695a;
+    color: #f0d4b5;
+}
+
+.sidePanelOptions.achivements{
+    background-color: #644749;
+    color: #f0d4b5;
+}
+
+.sidePanelOptions.testing{
+    background-color: #553b3e;
+    color: #f0d4b5;
+}
+
+.menuElements{
+    grid-area: menuElements;
+    background-color: #333333;
+    height: 89.2vh;
+    width: 100%;
+    display: grid;
+    align-items: center;
+}
+
+.menuPanel{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-self: center;
+}
+
+.panelContent{
+    margin-left: 18px;
+    height: 92%;
+    width: 95%;
+    border-radius: 20px;
+    border: 10px solid;
+}
+
+.panelContent.baseMenu{
+    border-color: #e1c59c;
+}
+
+.menuPanel.baseMenu{
+    background-color: #f0d4b5;
+    display: grid;
+    align-items: center;
+}
+
+.panelContent.specialMenu{
+    border-color: #d4ac6a;
+}
+
+.menuPanel.specialMenu{
+    background-color: #e3bb88;
+    display: grid;
+    align-items: center;
+}
+
+.panelContent.talents{
+    border-color: #d68d49;
+}
+
+.menuPanel.talents{
+    background-color: #e59c67;
+    display: grid;
+    align-items: center;
+}
+
+.panelContent.utilitiesVisual{
+    border-color: #a25a3c;
+}
+
+.menuPanel.utilitiesVisual{
+    background-color: #b1695a;
+    display: grid;
+    align-items: center;
+}
+
+.panelContent.achivements{
+    border-color: #55382b;
+}
+
+.menuPanel.achivements{
+    background-color: #644749;
+    display: grid;
+    align-items: center;
+}
+
+.panelContent.testing{
+    border-color: #462c20;
+}
+
+.menuPanel.testing{
+    background-color: #553b3e;
+    display: grid;
+    align-items: center;
+}
+
+
+.blackOutPanel{
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+}
+
+.mainMenuPopUp{
+    position: absolute;
+    z-index: 3;
+    left: 35%;
+    top: 25%;
+    background-color: #333333;
+    width: 500px;
+    height: 300px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #cb9949;
+    border-width: 5px;
+} 
+
+.mainMenuPopUp input{
+    height: 40px;
+    width: 300px;
+    font-size: 20px;
+    font-family: "Angkor";
+    border-radius: 5px;
+    border: #d4ac6a;
+    border-style: solid;
+    padding-left: 10px;
+}
+
+.mainMenuPopUp input:focus{
+    outline-style: solid;
+    outline-width: 5px;
+    outline-color: #a25a3c;
+}
+
+.mainMenuPopUp button{
+    font-family: "Angkor";
+   
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+    margin: 0;
+    margin-right: 20px;
+    margin-left: 20px;
+    
+    color: #333333;
+    font-size: 20px;
+    background: #cb9949;
+    border-radius: 10px 10px 0px 0px;
+    border-right: none;
+    border-bottom: solid #a25a3c;
+    border-left: none;
+    border-top: none;
+}
+
+.mainMenuPopUp button:active{
+    filter: hue-rotate(-15deg);
+}
+
+.mainMenuPopUp p{
+    line-height: 0;
+    margin: 0;
+    padding: 0;
+    display: inline;
+    color: #f0d4b5;
+    font-size: 25px;
+}
+
+
+.mainMenuPopUp.errorMessage{
+    background-color: #8e1919;
+    border-color: #4b0202;
+    text-align: center;
+}
+
+.mainMenuPopUp.errorMessage button{
+    background: #333333;
+    color: #ffffff;
+    border-bottom: solid #2c2c2c;
+    font-size: 30px;
+}
+
+.mainMenuPopUp.errorMessage p{
+    color: #ffffff;
+    line-height: 1;
+}
+
+.mainMenuPopUp.startTheDay a{
+    text-decoration: none;
+    color: #333333;
+}

@@ -1,0 +1,68 @@
+@import url("../Css/headerMenu.css");
+@import url("../Css/mainMenuPanel.css");
+@import url("../Css/baseMenu.css");
+@import url("../Css/visualMenu.css");
+@import url("../Css/specialMenu.css");
+@import url("../Css/testing.css");
+
+.angkor-regular {
+    font-family: "Angkor", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+html {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+}
+ 
+body {
+    margin: 0px;
+    min-height: 100%;
+    width: 100%;
+    font-family: "Angkor";
+    cursor: url(../Images/misc/cursorDef.png), auto;
+}
+
+
+button:hover{
+    cursor: url(../Images/misc/cursorDef.png), auto;
+}
+
+a:hover{
+    cursor: url(../Images/misc/cursorDef.png), auto;
+}
+
+.hidden{
+    display: none !important;
+}
+
+.confirmBtnBaseM{
+    position: absolute;
+    top: 125px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    font-family: "Angkor";
+    color: #333333;
+    font-size: 25px;
+    background: #dbb482;
+    border-radius: 10px;
+    border-bottom: solid #333333;
+    border-right: solid #333333;
+    border-left: none;
+    border-top: none;
+}
+
+.confirmBtnBaseM.topping{
+    left: 750px;
+}
+
+.confirmBtnBaseM.cookie{
+    left: 1335px;
+}
+
+.confirmBtnBaseM:active{
+    filter: hue-rotate(-25deg) !important;
+}

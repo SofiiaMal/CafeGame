@@ -1,0 +1,144 @@
+.optionGallery{
+    width: 900px;
+    display: flex;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    border-radius: 10px;
+    background-color: #e2978a;
+}
+
+.optionGallery::-webkit-scrollbar{
+    display: none;
+}
+
+.optionGallery div{
+    width: 600px;
+    display: grid;
+   
+    grid-template-columns: repeat(3, minmax(0, 1fr)); /* Ensures equal width */
+   
+    align-items: center;
+    gap: 30px;
+    padding: 10px;
+    flex: none;
+}
+
+.kettleOptions{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.kettleOptions img{
+    width: auto;
+    height: fit-content;
+}
+
+.cupOptions{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cupOptions img{
+    width: auto;
+    height: fit-content;
+}
+
+#rightKettle{
+    padding-left: 10px;
+}
+#leftKettle{
+    padding-right: 10px;
+}
+#rightCup{
+    padding-left: 10px;
+}
+#leftCup{
+    padding-right: 10px;
+}
+
+.visualChoiceElement{
+    width: 150px !important;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+
+    border-radius: 10px;
+    background-color: #efb3ab;
+}
+
+.visualChoiceElement img{
+    margin-top: -60px;
+    object-fit: contain;
+    width: 150px;
+    max-height: 150px;
+    height: auto;
+
+}
+
+.visualChoiceElement button{
+    margin: 0 auto;
+    margin-top: 169px;
+    margin-left: -43px;
+}
+
+.panelContent.utilitiesVisual p{
+    padding-left: 20px;
+    line-height: 0;
+    font-size: 27px;
+    color: #f0d4b5;
+}
+
+.checkbox.visual input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.checkbox.visual{
+    width: 2px;
+}
+
+.checkbox.visual label{
+    font-size: 20px;
+    position: relative;
+    left: -46px;
+    bottom: -92px;
+    width: 100px;
+    background-color: #b1695a;
+    padding: 0px 0px 0px 0px;
+    border-radius: 10px 10px 0px 0px;
+    transition: color 0.3s ease;
+    color: #f0d4b5;
+    text-align: center;
+    user-select: none; 
+}
+
+.checkbox.visual input:checked + label {
+    background-color: #5a9949;
+    transition: background-color 0.3s ease;
+}
+
+.panelContent.utilitiesVisual p{
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.panelContent.utilitiesVisual button{
+    font-family: "Angkor";
+    background: #f0d4b5;
+    font-size: 20px;
+    color: #b1695a;
+    border-bottom: solid #333333;
+    border-radius: 10px 10px 0px 0px;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+}
