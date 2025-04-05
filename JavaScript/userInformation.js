@@ -18,9 +18,9 @@ document.getElementById("resetLocalStorageBtn").onclick = function() {
 
 //getting local storage
 
-import * as mainFile from './script.js';
+import localStorageSetUp from './localStorageSetUp.js';
 
-mainFile.localStorageSetUp();
+localStorageSetUp();
 
 //error message
 

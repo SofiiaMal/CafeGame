@@ -1,8 +1,8 @@
 import * as imgSource from '../JavaScript/imageSources.js';
 import * as gameSequense from '../JavaScript/gameSequense.js';
-import * as mainFile from './script.js';
+import localStorageSetUp from './localStorageSetUp.js';
 
-mainFile.localStorageSetUp();
+localStorageSetUp();
 
 export let orderLines = ["null", "null"]
 export let isOrderGen = [false, false];

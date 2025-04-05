@@ -1,6 +1,6 @@
-import * as mainModule from "./script.js";
+import localStorageSetUp from './localStorageSetUp.js';
 
-mainModule.localStorageSetUp();
+localStorageSetUp();
 
 const lavenderToppingPurchaseBtn = document.getElementById("lavenderToppingPurchase");
 const sunflowerToppingPurchaseBtn = document.getElementById("sunflowerToppingPurchase");
