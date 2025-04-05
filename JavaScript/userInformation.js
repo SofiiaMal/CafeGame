@@ -1,5 +1,9 @@
 //reset local storage
 
+if (!localStorage.getItem("purchasedToppings")) {
+    localStorage.setItem("purchasedToppings", "true,true,true,false,false,false,false");
+}
+
 document.getElementById("resetLocalStorageBtn").onclick = function() {
     localStorage.setItem("username", "User");
     localStorage.setItem("purchasedToppings", "true,true,true,false,false,false,false");
