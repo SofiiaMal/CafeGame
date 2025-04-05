@@ -1,9 +1,5 @@
 //reset local storage
 
-if (!localStorage.getItem("purchasedToppings")) {
-    localStorage.setItem("purchasedToppings", "true,true,true,false,false,false,false");
-}
-
 document.getElementById("resetLocalStorageBtn").onclick = function() {
     localStorage.setItem("username", "User");
     localStorage.setItem("purchasedToppings", "true,true,true,false,false,false,false");
@@ -19,6 +15,12 @@ document.getElementById("resetLocalStorageBtn").onclick = function() {
 
     location.reload();
 }
+
+//getting local storage
+
+import * as mainFile from './script.js';
+
+mainFile.localStorageSetUp();
 
 //error message
 
@@ -59,7 +61,7 @@ isPurchasedTopping();
 toppingSelectedOnLoad();
 
 function isPurchasedTopping(){
-    let isPurchased = localStorage.getItem("purchasedToppings").split(",");
+    let isPurchased = localStorage.purchasedToppings.split(",");
 
     if(isPurchased[3] == "true"){
         document.getElementById("lavenderToppingPurchase").classList.add("hidden");

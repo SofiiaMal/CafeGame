@@ -1,5 +1,8 @@
 import * as orderGen from '../JavaScript/orderGeneration.js';
 import * as gamePanel from '../JavaScript/gamePanel.js';
+import * as mainFile from './script.js';
+
+mainFile.localStorageSetUp();
 
 let customerCount = Number(localStorage.moneyDay.split(",")[1]) + 3;
 customerCount >= 7 ? customerCount=7 : customerCount=customerCount;

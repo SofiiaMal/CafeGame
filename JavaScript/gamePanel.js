@@ -1,6 +1,9 @@
 import * as orderGen from '../JavaScript/orderGeneration.js';
 import * as imgSrc from '../JavaScript/imageSources.js';
 import * as gameSequense from './gameSequense.js';
+import * as mainFile from './script.js';
+
+mainFile.localStorageSetUp();
 
 const headerTime = document.getElementById("timeLeftHeader");
 const startTimerBtn = document.getElementById("testStartTimer");

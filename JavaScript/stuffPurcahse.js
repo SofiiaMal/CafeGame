@@ -1,5 +1,7 @@
 import * as mainModule from "./script.js";
 
+mainModule.localStorageSetUp();
+
 const lavenderToppingPurchaseBtn = document.getElementById("lavenderToppingPurchase");
 const sunflowerToppingPurchaseBtn = document.getElementById("sunflowerToppingPurchase");
 const roseToppingPurchaseBtn = document.getElementById("roseToppingPurchase");
