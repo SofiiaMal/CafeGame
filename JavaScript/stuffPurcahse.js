@@ -2,6 +2,11 @@ import localStorageSetUp from './localStorageSetUp.js';
 
 localStorageSetUp();
 
+function moneyUpdate() {
+    document.getElementById("headerMoney").textContent = `${Number(localStorage.moneyDay.split(",")[0])}`;
+    document.getElementById("headerDayCount").textContent = `Day ${Number(localStorage.moneyDay.split(",")[1])}`;
+}
+
 const lavenderToppingPurchaseBtn = document.getElementById("lavenderToppingPurchase");
 const sunflowerToppingPurchaseBtn = document.getElementById("sunflowerToppingPurchase");
 const roseToppingPurchaseBtn = document.getElementById("roseToppingPurchase");
@@ -14,7 +19,7 @@ lavenderToppingPurchaseBtn.onclick = function(){
         tempArray[0] = temp.toString();
         localStorage.moneyDay = tempArray.toString();
 
-        mainModule.moneyUpdate();
+        moneyUpdate();
         lavenderToppingPurchaseBtn.classList.add("hidden");
         document.getElementsByClassName("levanderTopping")[0].classList.remove("hidden");
 
@@ -31,7 +36,7 @@ sunflowerToppingPurchaseBtn.onclick = function(){
         tempArray[0] = temp.toString();
         localStorage.moneyDay = tempArray.toString();
 
-        mainModule.moneyUpdate();
+        moneyUpdate();
         sunflowerToppingPurchaseBtn.classList.add("hidden");
         document.getElementsByClassName("sunflowerTopping")[0].classList.remove("hidden");
 
@@ -48,7 +53,7 @@ roseToppingPurchaseBtn.onclick = function(){
         tempArray[0] = temp.toString();
         localStorage.moneyDay = tempArray.toString();
 
-        mainModule.moneyUpdate();
+        moneyUpdate();
         roseToppingPurchaseBtn.classList.add("hidden");
         document.getElementsByClassName("roseTopping")[0].classList.remove("hidden");
 
@@ -65,7 +70,7 @@ lemonToppingPurchaseBtn.onclick = function(){
         tempArray[0] = temp.toString();
         localStorage.moneyDay = tempArray.toString();
 
-        mainModule.moneyUpdate();
+        moneyUpdate();
         lemonToppingPurchaseBtn.classList.add("hidden");
         document.getElementsByClassName("lemonTopping")[0].classList.remove("hidden");
 
@@ -87,7 +92,7 @@ dominoCookiePurchaseBtn.onclick = function(){
         tempArray[0] = temp.toString();
         localStorage.moneyDay = tempArray.toString();
 
-        mainModule.moneyUpdate();
+        moneyUpdate();
         dominoCookiePurchaseBtn.classList.add("hidden");
         document.getElementsByClassName("dominoCookie")[0].classList.remove("hidden");
 
@@ -104,7 +109,7 @@ cardCookiePurchaseBtn.onclick = function(){
         tempArray[0] = temp.toString();
         localStorage.moneyDay = tempArray.toString();
 
-        mainModule.moneyUpdate();
+        moneyUpdate();
         cardCookiePurchaseBtn.classList.add("hidden");
         document.getElementsByClassName("cardCookie")[0].classList.remove("hidden");
 
@@ -121,7 +126,7 @@ starJellyCookiePurchaseBtn.onclick = function(){
         tempArray[0] = temp.toString();
         localStorage.moneyDay = tempArray.toString();
 
-        mainModule.moneyUpdate();
+        moneyUpdate();
         starJellyCookiePurchaseBtn.classList.add("hidden");
         document.getElementsByClassName("starJellyCookie")[0].classList.remove("hidden");
 
@@ -138,7 +143,7 @@ flowerCookiePurchaseBtn.onclick = function(){
         tempArray[0] = temp.toString();
         localStorage.moneyDay = tempArray.toString();
 
-        mainModule.moneyUpdate();
+        moneyUpdate();
         flowerCookiePurchaseBtn.classList.add("hidden");
         document.getElementsByClassName("flowerCookie")[0].classList.remove("hidden");
 
@@ -164,7 +169,7 @@ kettle2PurchaseBtn.onclick = function(){
         tempArray[0] = temp.toString();
         localStorage.moneyDay = tempArray.toString();
 
-        mainModule.moneyUpdate();
+        moneyUpdate();
         kettle2PurchaseBtn.classList.add("hidden");
         document.getElementsByClassName("kettle2Look")[0].classList.remove("hidden");
     
@@ -181,7 +186,7 @@ kettle3PurchaseBtn.onclick = function(){
         tempArray[0] = temp.toString();
         localStorage.moneyDay = tempArray.toString();
 
-        mainModule.moneyUpdate();
+        moneyUpdate();
         kettle3PurchaseBtn.classList.add("hidden");
         document.getElementsByClassName("kettle3Look")[0].classList.remove("hidden");
     
@@ -198,7 +203,7 @@ kettle4PurchaseBtn.onclick = function(){
         tempArray[0] = temp.toString();
         localStorage.moneyDay = tempArray.toString();
 
-        mainModule.moneyUpdate();
+        moneyUpdate();
         kettle4PurchaseBtn.classList.add("hidden");
         document.getElementsByClassName("kettle4Look")[0].classList.remove("hidden");
     
@@ -215,7 +220,7 @@ kettle5PurchaseBtn.onclick = function(){
         tempArray[0] = temp.toString();
         localStorage.moneyDay = tempArray.toString();
 
-        mainModule.moneyUpdate();
+        moneyUpdate();
         kettle5PurchaseBtn.classList.add("hidden");
         document.getElementsByClassName("kettle5Look")[0].classList.remove("hidden");
     
@@ -232,7 +237,7 @@ kettle6PurchaseBtn.onclick = function(){
         tempArray[0] = temp.toString();
         localStorage.moneyDay = tempArray.toString();
 
-        mainModule.moneyUpdate();
+        moneyUpdate();
         kettle6PurchaseBtn.classList.add("hidden");
         document.getElementsByClassName("kettle6Look")[0].classList.remove("hidden");
     
@@ -249,7 +254,7 @@ kettle7PurchaseBtn.onclick = function(){
         tempArray[0] = temp.toString();
         localStorage.moneyDay = tempArray.toString();
 
-        mainModule.moneyUpdate();
+        moneyUpdate();
         kettle7PurchaseBtn.classList.add("hidden");
         document.getElementsByClassName("kettle7Look")[0].classList.remove("hidden");
     
@@ -266,7 +271,7 @@ kettle8PurchaseBtn.onclick = function(){
         tempArray[0] = temp.toString();
         localStorage.moneyDay = tempArray.toString();
 
-        mainModule.moneyUpdate();
+        moneyUpdate();
         kettle8PurchaseBtn.classList.add("hidden");
         document.getElementsByClassName("kettle8Look")[0].classList.remove("hidden");
     
@@ -283,7 +288,7 @@ kettle9PurchaseBtn.onclick = function(){
         tempArray[0] = temp.toString();
         localStorage.moneyDay = tempArray.toString();
 
-        mainModule.moneyUpdate();
+        moneyUpdate();
         kettle9PurchaseBtn.classList.add("hidden");
         document.getElementsByClassName("kettle9Look")[0].classList.remove("hidden");
     
@@ -309,7 +314,7 @@ cup2PurchaseBtn.onclick = function(){
         tempArray[0] = temp.toString();
         localStorage.moneyDay = tempArray.toString();
 
-        mainModule.moneyUpdate();
+        moneyUpdate();
         cup2PurchaseBtn.classList.add("hidden");
         document.getElementsByClassName("cup2Look")[0].classList.remove("hidden");
     
@@ -326,7 +331,7 @@ cup3PurchaseBtn.onclick = function(){
         tempArray[0] = temp.toString();
         localStorage.moneyDay = tempArray.toString();
 
-        mainModule.moneyUpdate();
+        moneyUpdate();
         cup3PurchaseBtn.classList.add("hidden");
         document.getElementsByClassName("cup3Look")[0].classList.remove("hidden");
     
@@ -343,7 +348,7 @@ cup4PurchaseBtn.onclick = function(){
         tempArray[0] = temp.toString();
         localStorage.moneyDay = tempArray.toString();
 
-        mainModule.moneyUpdate();
+        moneyUpdate();
         cup4PurchaseBtn.classList.add("hidden");
         document.getElementsByClassName("cup4Look")[0].classList.remove("hidden");
     
@@ -360,7 +365,7 @@ cup5PurchaseBtn.onclick = function(){
         tempArray[0] = temp.toString();
         localStorage.moneyDay = tempArray.toString();
 
-        mainModule.moneyUpdate();
+        moneyUpdate();
         cup5PurchaseBtn.classList.add("hidden");
         document.getElementsByClassName("cup5Look")[0].classList.remove("hidden");
     
@@ -377,7 +382,7 @@ cup6PurchaseBtn.onclick = function(){
         tempArray[0] = temp.toString();
         localStorage.moneyDay = tempArray.toString();
 
-        mainModule.moneyUpdate();
+        moneyUpdate();
         cup6PurchaseBtn.classList.add("hidden");
         document.getElementsByClassName("cup6Look")[0].classList.remove("hidden");
     
@@ -394,7 +399,7 @@ cup7PurchaseBtn.onclick = function(){
         tempArray[0] = temp.toString();
         localStorage.moneyDay = tempArray.toString();
 
-        mainModule.moneyUpdate();
+        moneyUpdate();
         cup7PurchaseBtn.classList.add("hidden");
         document.getElementsByClassName("cup7Look")[0].classList.remove("hidden");
     
@@ -411,7 +416,7 @@ cup8PurchaseBtn.onclick = function(){
         tempArray[0] = temp.toString();
         localStorage.moneyDay = tempArray.toString();
 
-        mainModule.moneyUpdate();
+        moneyUpdate();
         cup8PurchaseBtn.classList.add("hidden");
         document.getElementsByClassName("cup8Look")[0].classList.remove("hidden");
     
@@ -428,7 +433,7 @@ cup9PurchaseBtn.onclick = function(){
         tempArray[0] = temp.toString();
         localStorage.moneyDay = tempArray.toString();
 
-        mainModule.moneyUpdate();
+        moneyUpdate();
         cup9PurchaseBtn.classList.add("hidden");
         document.getElementsByClassName("cup9Look")[0].classList.remove("hidden");
     
@@ -452,7 +457,7 @@ strawberryCakePurchaseBtn.onclick = function(){
         tempArray[0] = temp.toString();
         localStorage.moneyDay = tempArray.toString();
 
-        mainModule.moneyUpdate();
+        moneyUpdate();
         strawberryCakePurchaseBtn.classList.add("hidden");
         document.getElementsByClassName("strawberryCake")[0].classList.remove("hidden");
 
@@ -469,7 +474,7 @@ kiwiCakePurchaseBtn.onclick = function(){
         tempArray[0] = temp.toString();
         localStorage.moneyDay = tempArray.toString();
 
-        mainModule.moneyUpdate();
+        moneyUpdate();
         kiwiCakePurchaseBtn.classList.add("hidden");
         document.getElementsByClassName("kiwiCake")[0].classList.remove("hidden");
 
@@ -486,7 +491,7 @@ blueberryCakePurchaseBtn.onclick = function(){
         tempArray[0] = temp.toString();
         localStorage.moneyDay = tempArray.toString();
 
-        mainModule.moneyUpdate();
+        moneyUpdate();
         blueberryCakePurchaseBtn.classList.add("hidden");
         document.getElementsByClassName("blueberryCake")[0].classList.remove("hidden");
 
@@ -503,7 +508,7 @@ colorStickPurchaseBtn.onclick = function(){
         tempArray[0] = temp.toString();
         localStorage.moneyDay = tempArray.toString();
 
-        mainModule.moneyUpdate();
+        moneyUpdate();
         colorStickPurchaseBtn.classList.add("hidden");
         document.getElementsByClassName("colorStick")[0].classList.remove("hidden");
 
@@ -520,7 +525,7 @@ fruitStickBigPurchaseBtn.onclick = function(){
         tempArray[0] = temp.toString();
         localStorage.moneyDay = tempArray.toString();
 
-        mainModule.moneyUpdate();
+        moneyUpdate();
         fruitStickBigPurchaseBtn.classList.add("hidden");
         document.getElementsByClassName("fruitStickBig")[0].classList.remove("hidden");
 
@@ -537,7 +542,7 @@ puddingPlatePurchaseBtn.onclick = function(){
         tempArray[0] = temp.toString();
         localStorage.moneyDay = tempArray.toString();
 
-        mainModule.moneyUpdate();
+        moneyUpdate();
         puddingPlatePurchaseBtn.classList.add("hidden");
         document.getElementsByClassName("puddingPlate")[0].classList.remove("hidden");
 
